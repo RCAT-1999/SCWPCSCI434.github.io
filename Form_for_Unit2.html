@@ -1,0 +1,62 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset="utf-8" >
+   <title>Pick a Swimmer and Swim Style</title>
+   <style type="text/css">
+      ol, ul { 
+     list-style-type: none;
+      }
+   </style>
+</head>
+
+<body>
+
+<h1>Swimmer or Swimming Style</h1>
+
+<p>Please select either a swimmer of a swimming style to learn more about them or it!</p>
+
+
+<form action="" method="post">
+
+<fieldset>
+  <legend>Swimmer or Swim-Style</legend>
+  <ul>
+    <li><label for="form-swimmer"><input type="radio" name="choice" id="form-swimmer">Swimmer</label></li>
+    <li><label for="form-swimstyle"><input type="radio" name="choice" id="form-swimstyle">Swimstyle</label></li>
+  </ul>
+</fieldset>
+
+<h2>Pick the swimmers or swimstyle</h2>
+
+<fieldset>
+  <legend>Swimmer or Swimstyle</legend>
+  <fieldset>
+    <legend>Swimmers:</legend>
+    <ul>
+      <li><label><input type="checkbox" name="swimmers" value="katie"> Katie Ledecky</label></li>
+      <li><label><input type="checkbox" name="swimmers" value="michael"> Michael Phelps</label></li>
+      <li><label><input type="checkbox" name="swimmers" value="leon"> Leon Marchand</label></li>
+      <li><label><input type="checkbox" name="swimmers" value="ryan"> Ryan Lochte</label></li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+  <legend>Swimstyle</legend>
+    <ul>
+      <li><label><input type="checkbox" name="swimstyle[]" value="freestyle"> Freestyle</label></li>
+      <li><label><input type="checkbox" name="swimstyle[]" value="backstroke"> Backstroke</label></li>
+      <li><label><input type="checkbox" name="swimstyle[]" value="butterfly"> Butterfly</label></li>
+      <li><label><input type="checkbox" name="swimstyle[]" value="breaststroke"> Breaststroke</label></li>
+      <li><label><input type="checkbox" name="swimstyle[]" value="sidestroke"> Sidestroke</label></li>
+    </ul>
+  </fieldset>
+</fieldset>
+
+<p><input type="submit" value="Gather Information">
+<input type="reset"></p>
+
+</form>
+
+</body>
+</html>
