@@ -41,3 +41,8 @@ div#SwimmerPics {
     padding-top: 0;
     border-top: 0;
 }
+
+nav{
+    display: flex;
+    list-style-type: none;
+}
