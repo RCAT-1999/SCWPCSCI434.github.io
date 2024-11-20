@@ -37,4 +37,5 @@ div#ImagesofSwimmers{
     overflow: auto;
     background: url(PICTURES/Combined_images.png) center no-repeat;
     background-size: cover;
+    border: 1px solid #57b1dc;
 }
