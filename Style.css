@@ -48,10 +48,15 @@ div#SwimmerPics {
     margin: 0;
 }
 
+.nav > li{
+    list-style-type: none;
+}
+
 .nav > li > a{
     list-style-type: none;
     border: 1px solid black;
     padding-right: 10px;
     padding-left: 10px;
     color: white;
+    text-decoration: none;
 }
