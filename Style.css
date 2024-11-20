@@ -42,12 +42,12 @@ div#SwimmerPics {
     border-top: 0;
 }
 
-nav {
+.nav {
     display: flex;
     flex-direction: row;
 }
 
-nav > li {
+.nav > li {
     list-style-type: none;
     
 }
