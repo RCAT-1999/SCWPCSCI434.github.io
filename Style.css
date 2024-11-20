@@ -48,7 +48,7 @@ div#SwimmerPics {
     margin: 0;
 }
 
-.nav > li {
+.nav > li > a{
     list-style-type: none;
     border: 1px solid black;
     padding-right: 10px;
