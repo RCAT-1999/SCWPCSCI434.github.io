@@ -34,7 +34,7 @@ p#ParaMe {
 div#ImagesofSwimmers{
     width: 100%;
     height: 320px;
-    overflow: auto
+    overflow: auto;
     background: url(PICTURES/Combined_images.png) center no-repeat;
     background-size: cover;
 }
