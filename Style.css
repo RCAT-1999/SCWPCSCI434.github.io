@@ -40,7 +40,7 @@ div#SwimmerPics {
     height: 320px;
     overflow: auto;
     background-size: cover;
-    background: url("PICTURES/Combined_images.png") center no-repeat;
+    background: url("Combined_images.png") center no-repeat;
 
 }
 
@@ -58,7 +58,6 @@ padding: 0 100px;
 
 nav ul{
 float: right;
-margin-right: 30px;
 }
 
 nav ul li{
@@ -98,4 +97,49 @@ background: #B6174B;
 
 #check{
 display: none;
+}
+
+@media (max-width: 1151px){
+  label.hobbyName{
+	font-size: 30px;
+	padding-left: 50px;
+
+}
+
+ nav ul li a{
+	font-size: 16px;
+
+}
+}
+
+@media (max-width: 1151px){
+  .checkbtn{
+	display: block;
+}
+
+ ul{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: #2c3e50;
+	top: 80px;
+	left: -100%;
+	text-align: center;
+	transition: all .5s;
+}
+
+nav ul li{
+display: block;
+}
+
+a:hover, a.active{
+background: none;
+color: #0082e6;
+}
+
+#check:checked ~ ul{
+	left: 0;
+}
+
+
 }
