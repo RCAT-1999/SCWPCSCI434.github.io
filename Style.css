@@ -14,9 +14,13 @@
   h2{
     
     padding: 25px 100px;
-
     background: #DBD3D8;
   } 
+
+main{
+min-height: calc(100vh - 500px);
+background: #57CC99;
+}
 
 footer {
   
@@ -26,6 +30,17 @@ footer {
   height: 100px;
   background: #DBD3D8;
   line-height: 100px;
+}
+
+main{
+min-height: calc(100vh - 500px);
+background: #57CC99;
+}
+
+#nearestPoolPagemain{
+min-height: calc(100vh - 180px);
+background: #FFF090;
+position: relative;
 }
 
 p#ParaMe {
@@ -40,7 +55,7 @@ div#SwimmerPics {
     height: 320px;
     overflow: auto;
     background-size: cover;
-    background: url("PICTURES/Combined_images.png") center no-repeat;
+    background: url("Combined_images.png") center no-repeat;
 
 }
 
@@ -76,11 +91,7 @@ border-radius: 3px;
 padding: 7px;
 }
 
-main{
-min-height: calc(100vh - 500px);
-background: #57CC99;
 
-}
 
 a:hover {
 background: #B6174B;
@@ -141,6 +152,21 @@ color: #0082e6;
 #check:checked ~ ul{
 	left: 0;
 }
-
-
 }
+div.formcontainer {
+display: flex;
+justify-content: center;
+min-height: calc(100vh - 180px);
+align-items: center;
+background-color: #38A3A5;
+}
+
+#poolForm{
+background-color: #57CC99;
+padding: 200px 30px 200px 30px;
+max-width: 500px;
+}
+
+
+
+
