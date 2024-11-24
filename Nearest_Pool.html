@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="LocalCSS.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 <body>
@@ -23,6 +23,55 @@
   </ul>
 </nav>
 
-<footer></footer>
+<div class="formcontainer">
+
+<form id="poolForm">
+<div>
+<label for="fname">First Name:</label><br>
+<input type="text" id="fname" name="fname" placeholder="First Name" required="true"><br><br>
+</div>
+
+<div>
+<label for="lname">Last Name:</label><br>
+<input type="text" id="lname" name="lname" placeholder="Last Name" required="true"><br><br>
+</div>
+
+<div>
+<label for="city">City:</label><br>
+<input type="text" id="city" name="city" placeholder="City" required="true"><br><br>
+</div>
+
+<div>
+<label for="state">State</label><br>
+<input type="text" id="state" name="state" placeholder="State" required="true"><br><br>
+</div>
+
+<div>
+<label for="zipcode">Zip Code:</label><br>
+<input type="text" id="zipcode" name="zipcode" placeholder="Zip Code" required="false"><br><br>
+</div>
+
+<div style="display: flex; justify-content: center;">
+<input type="submit">
+</div>
+</form>
+</div>
+
+<script>
+        document.getElementById("poolForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            alert("Form submitted! Thank you for your response.");
+	    const fname = document.getElementById("fname");
+	    const lname = document.getElementById("lname");
+	    const city = document.getElementById("city");
+	    const state = document.getElementById("state");
+	    const zipcode = document.getElementById("zipcode");
+	    window.open("https://www.google.com/maps/search/pools+near" + "+" + city.value + "+" + state.value + "+" + zipcode.value);
+	    document.getElementById("poolForm").reset();
+        });
+</script>
+
+
+<footer>Design Document</footer>
 </body>
 </html>
